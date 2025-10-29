@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* === Registrar fuentes (desde public/fonts/) === */
+@font-face {
+  font-family: "Bakbak One";
+  src: url("/fonts/Bakbak_One/BakbakOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === Definir tu tema === */
+@theme {
+  --color-landpage-yellow: #f4e724;
+  --color-landpage-blue: #142b70;
+  --color-landpage-skyblue: #f7f8fc;
+  --color-landpage-skyyellow: #f3f2e3;
+  --color-landpage-gray: #f2f2f2;
+
+  /* Fuentes personalizadas */
+  --font-bakbak-one: "Bakbak One", sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+/* === Estilos base === */
+@layer base {
+  body {
+    /* Fuente global por defecto */
+    font-family: var(--font-poppins);
+  }
+
+  /* Clases auxiliares */
+  .font-bakbak {
+    font-family: var(--font-bakbak-one);
+  }
+
+  .font-dm {
+    font-family: var(--font-dm-sans);
+  }
+
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
+}
