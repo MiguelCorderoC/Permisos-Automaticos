@@ -4,7 +4,10 @@ import imgLogoNegro from "../../assets/img/mobile/logo_negro.svg";
 
 export const MenuDesktop = () => {
   const location = useLocation();
-  const isHome = location.pathname === "/";
+  const isHome =
+    location.pathname === "/" ||
+    location.pathname === "/planes" ||
+    location.pathname === "/contacto";
 
   return (
     <nav
@@ -21,16 +24,52 @@ export const MenuDesktop = () => {
 
       <ul className="flex gap-20 font-semibold text-sm">
         <li>
-          <Link to={"/"}>INICIO</Link>
+          <Link
+            to={"/"}
+            className={`${
+              location.pathname === "/"
+                ? "underline decoration-landpage-yellow underline-offset-8 decoration-2"
+                : ""
+            }`}
+          >
+            INICIO
+          </Link>
         </li>
         <li>
-          <Link to={"/planes"}>PLANES</Link>
+          <Link
+            to={"/planes"}
+            className={`${
+              location.pathname === "/planes"
+                ? "underline decoration-landpage-yellow underline-offset-8 decoration-2"
+                : ""
+            }`}
+          >
+            PLANES
+          </Link>
         </li>
         <li>
-          <Link to={"/nosotros"}>NOSOTROS</Link>
+          <Link
+            to={"/nosotros"}
+            className={`${
+              location.pathname === "/nosotros"
+                ? "underline decoration-landpage-yellow underline-offset-8 decoration-2"
+                : ""
+            }`}
+          >
+            NOSOTROS
+          </Link>
         </li>
         <li>
-          <Link to={"/contacto"}>CONTACTO</Link>
+          <Link
+            to={"/contacto"}
+            className={`${
+              location.pathname === "/contacto"
+                ? "underline decoration-landpage-yellow underline-offset-8 decoration-2"
+                : ""
+            }`}
+          >
+            CONTACTO
+          </Link>
         </li>
         <li>
           <Link

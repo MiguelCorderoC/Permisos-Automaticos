@@ -4,6 +4,8 @@ import { Dudas } from "../components/home/Dudas";
 import { ElegirPermisos } from "../components/home/ElegirPermisos";
 import { FuncionPermisos } from "../components/home/FuncionPermisos";
 import { IniciaGratis } from "../components/home/IniciaGratis";
+import { NuestrosPlanes } from "../components/home/NuestrosPlanes";
+import { Plan } from "../components/home/Plan";
 
 export const HomeView = () => {
   return (
@@ -11,6 +13,13 @@ export const HomeView = () => {
       <AgilizaPermisos />
       <FuncionPermisos />
       <IniciaGratis />
+      <NuestrosPlanes
+        bg={"bg-landpage-yellow"}
+        title={" Conoce nuestros planes"}
+        text={
+          "Sin contratos ni sorpresas, adquiere el plan que más se adapte a tu empresa."
+        }
+      />
       <ElegirPermisos />
       <Clientes />
       <Dudas />

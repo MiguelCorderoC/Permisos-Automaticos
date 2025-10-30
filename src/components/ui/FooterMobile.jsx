@@ -1,21 +1,28 @@
 import { Link, useLocation } from "react-router-dom";
-import imgLogo from "../../assets/img/logo_blanco.svg";
-import imgLogoNegro from "../../assets/img/Logo_color_menu.svg";
+import imgLogoBlanco from "../../assets/img/logo_blanco.svg";
+import imgLogoNegro from "../../assets/img/logo_footer_color.svg";
 import { IoLogoLinkedin } from "react-icons/io";
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 
 export const FooterMobile = () => {
+  const location = useLocation();
+  const isContacto = location.pathname === "/contacto";
+
   return (
-    <footer className="pt-20 xl:hidden">
-      <section className={`space-y-16 px-7 py-20 bg-black text-white text-sm`}>
+    <footer
+      className={`${
+        isContacto ? "pt-0 bg-white text-black" : "pt-20 bg-black text-white"
+      } xl:hidden`}
+    >
+      <section className="space-y-16 px-7 py-20 text-sm">
         <article className="flex justify-between">
           <span className="text-xl font-medium">
             Simplificando <br /> tus permisos <br /> aduanales en <br /> México.
           </span>
           <div className="flex flex-col justify-between">
             <img
-              src={imgLogo}
+              src={isContacto ? imgLogoNegro : imgLogoBlanco}
               alt="Logo permisos automáticos"
               className="w-44"
             />
@@ -29,6 +36,7 @@ export const FooterMobile = () => {
             </div>
           </div>
         </article>
+
         <article className="flex justify-between">
           <div>
             <span className="font-semibold">Menú</span>
@@ -66,6 +74,7 @@ export const FooterMobile = () => {
             </div>
           </div>
         </article>
+
         <article className="space-y-2 text-center">
           <div className="flex justify-between">
             <span className="xl:underline">Aviso de Privacidad</span>
