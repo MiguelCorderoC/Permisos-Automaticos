@@ -29,7 +29,7 @@ export const PlanesInicio = () => {
           empresa merece.
         </p>
       </div>
-      <div className="-mt-28">
+      <div className="mt-20">
         <NuestrosPlanes bg={"bg-transparent"} />
       </div>
       <IniciaGratis />

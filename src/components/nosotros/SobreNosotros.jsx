@@ -2,7 +2,7 @@ import imgSobreNosotros from "../../assets/img/image_sobre_nosotros_seccion.jpg"
 
 export const SobreNosotros = () => {
   return (
-    <section className="flex flex-col gap-5 xl:gap-28">
+    <section className="flex flex-col gap-5 xl:gap-28 mt-16">
       <article className="flex flex-col gap-3">
         <span className="text-landpage-blue text-6xl font-bakbak-one xl:flex xl:justify-center">
           {" "}

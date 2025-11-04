@@ -8,6 +8,7 @@ import imgLogoNegro from "../../assets/img/Logo_color_menu.svg";
 export const FooterDesktop = () => {
   const location = useLocation();
   const isContacto = location.pathname === "/contacto";
+  const isLogin = location.pathname === "/login";
 
   return (
     <footer
@@ -15,7 +16,7 @@ export const FooterDesktop = () => {
         isContacto
           ? "bg-black -mt-40 2xl:-mt-80 text-white border-t-gray-700"
           : "bg-white text-black mt-40 border-t"
-      }`}
+      } ${isLogin && "border-t-0 "}`}
     >
       <div className="flex justify-between">
         <div className="flex flex-col gap-5">

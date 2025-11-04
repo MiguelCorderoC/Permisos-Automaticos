@@ -32,9 +32,21 @@ export const NuestrosPlanes = ({ bg }) => {
             <Plan />
           </div>
           <div className="hidden xl:flex xl:justify-between">
-            <Plan />
-            <Plan />
-            <Plan />
+            <Plan
+              bgColor={"bg-white"}
+              textColor={"text-landpage-blue"}
+              btnColor={"bg-landpage-blue"}
+            />
+            <Plan
+              bgColor={"bg-landpage-blue"}
+              textColor={"text-white"}
+              btnColor={"bg-white"}
+            />
+            <Plan
+              bgColor={"bg-white"}
+              textColor={"text-landpage-blue"}
+              btnColor={"bg-landpage-blue"}
+            />
           </div>
         </article>
       </section>

@@ -3,7 +3,7 @@ import imgFondo from "../../assets/img/mobile/imagen_crear_cuenta.jpg";
 export const CrearCuenta = () => {
   return (
     <section
-      className="flex justify-center items-center bg-cover bg-center min-h-screen -mx-7 -mb-20"
+      className="flex justify-center items-center bg-cover bg-center min-h-screen -mx-7 -mb-20 xl:w-[60%] xl:-mx-20"
       style={{ backgroundImage: `url(${imgFondo})` }}
     >
       <article className="flex flex-col items-center gap-5 font-dm-sans">
