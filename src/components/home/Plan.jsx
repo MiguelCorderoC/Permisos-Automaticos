@@ -4,7 +4,7 @@ import imgPalomita from "../../assets/img/icono_circulo_palomita.svg";
 import imgButton from "../../assets/img/mobile/botones_mensual_anual2.png";
 import { FaCheckCircle } from "react-icons/fa";
 
-export const Plan = ({ textColor, bgColor, btnColor }) => {
+export const Plan = ({ textColor, bgColor, btnColor, btnTextColor }) => {
   return (
     <div
       className={`rounded-xl pb-16 pt-5 px-5 flex flex-col gap-5 xl:w-[28%] xl:gap-7 xl:text-sm ${textColor} ${bgColor}`}
@@ -41,7 +41,7 @@ export const Plan = ({ textColor, bgColor, btnColor }) => {
       </ul>
       <div className="flex justify-center">
         <Link
-          className={`${btnColor} text-white py-2 px-8 rounded-full font-semibold`}
+          className={`${btnColor} ${btnTextColor} py-2 px-8 rounded-full font-semibold`}
         >
           Elegir este plan
         </Link>

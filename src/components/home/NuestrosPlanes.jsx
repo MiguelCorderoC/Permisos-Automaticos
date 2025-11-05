@@ -29,23 +29,31 @@ export const NuestrosPlanes = ({ bg }) => {
           </div>
 
           <div className="xl:hidden">
-            <Plan />
+            <Plan
+              bgColor={"bg-white"}
+              textColor={"text-landpage-blue"}
+              btnColor={"bg-landpage-blue"}
+              btnTextColor={"text-white"}
+            />
           </div>
           <div className="hidden xl:flex xl:justify-between">
             <Plan
               bgColor={"bg-white"}
               textColor={"text-landpage-blue"}
               btnColor={"bg-landpage-blue"}
+              btnTextColor={"text-white"}
             />
             <Plan
               bgColor={"bg-landpage-blue"}
               textColor={"text-white"}
               btnColor={"bg-white"}
+              btnTextColor={"text-landpage-blue"}
             />
             <Plan
               bgColor={"bg-white"}
               textColor={"text-landpage-blue"}
               btnColor={"bg-landpage-blue"}
+              btnTextColor={"text-white"}
             />
           </div>
         </article>
